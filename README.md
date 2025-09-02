@@ -1,8 +1,8 @@
-# E-Commerce Platform (Yshop Store)
+# E-Commerce Platform (Yshop E-Commerce Store)
 
 > A full-featured e-commerce platform built with the MERN stack and Redux Toolkit.
 
-![E-Commerce Screenshot](path-to-your-screenshot.png)
+![E-Commerce Screenshot](frontend/vite-project/src/assets/screenshots/screens.png)
 
 This project is part of my journey in building a modern e-commerce application. It includes both frontend and backend components, utilizing the latest technologies for a seamless shopping experience.
 
@@ -34,7 +34,7 @@ This project is part of my journey in building a modern e-commerce application. 
 
 ## Demo
 
-You can view a live demo of the application here: [https://your-demo-url.com](https://your-demo-url.com)
+You can view a live demo of the application here: [https://yshop-e-commerce-site.onrender.com](https://yshop-e-commerce-site.onrender.com)
 
 ---
 
