@@ -43,21 +43,21 @@ app.get("/api/config/paypal", (req, res) => {
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // Serve frontend (production build)
-// if (process.env.NODE_ENV === "production") {
-//   app.use(
-//     express.static(path.join(__dirname, "../frontend/vite-project/dist"))
-//   );
+if (process.env.NODE_ENV === "production") {
+  app.use(
+    express.static(path.join(__dirname, "../frontend/vite-project/dist"))
+  );
 
-//   app.get("*", (req, res) => {
-//     res.sendFile(
-//       path.resolve(__dirname, "../frontend/vite-project/dist/index.html")
-//     );
-//   });
-// } else {
-//   app.get("/", (req, res) => {
-//     res.send("API is running...");
-//   });
-// }
+  app.get("*", (req, res) => {
+    res.sendFile(
+      path.resolve(__dirname, "../frontend/vite-project/dist/index.html")
+    );
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running...");
+  });
+}
 
 // Error middleware
 app.use(notFound);
